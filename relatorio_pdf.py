@@ -60,7 +60,6 @@ S_CELL_H = estilo("CellH", fontSize=7, leading=8, alignment=1,
 
 
 def tabela(dados, font_size=7):
-    """Tabela com quebra de linha nas celulas (evita estouro da margem)."""
     if not dados:
         return Spacer(1, 0)
     n_cols = len(dados[0])
@@ -112,7 +111,6 @@ def secao(elementos, titulo, tool, descricao, cli, api, cabecalho, linhas, limit
 
 
 def _tabela_integridade(dados):
-    """Tabela midia x propriedade (hashes antes/depois da analise)."""
     linhas = [["Mídia", "Propriedade", "Valor"]]
     inicio = (dados or {}).get("inicio", {})
     fim = (dados or {}).get("fim", {})

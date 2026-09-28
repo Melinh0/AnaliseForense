@@ -179,3 +179,14 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+# -------------------------------------------------
+# Imagens forenses e saidas (nunca versionar)
+# -------------------------------------------------
+data/
+*.raw
+*.dd
+*.ad1
+*.E01
+*.pdf
+relatorios/
+cache/
